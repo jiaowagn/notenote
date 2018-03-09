@@ -1,0 +1,5 @@
+- @notes.each do |note|
+  %h2= link_to note.title, note_path(note)
+  %p= note.created_at.strftime("%b %d %Y")
+
+= link_to "New Note", new_note_path
